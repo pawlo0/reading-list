@@ -4,7 +4,7 @@
  
    <ol class="breadcrumb">
      <li class="active">
-       Books
+       <%= link_to 'All Books', books_path() %>
      </li>
    </ol>
  
@@ -18,19 +18,21 @@
            </div>
          </form>
        </p>
-       <!--<p class='pull-right'>
-         <a href='#' id='show-form' class='btn btn-primary'>New Book Form</a>
-       </p>-->
+        <p class='pull-right'>
+         <a href='#' id='show-form' class='btn btn-primary'>New Book</a>
+       </p>
      </div>
    </div>
  
    <hr>
  
+   <%= render 'newbook' %> 
+
    <div class="row">
      <div class="col-sm-8">
-       <ul class="list-unstyled">
+       <ul class="list-unstyled book-list">
  
-				<%= render @books %>
+	  <%= render @books %>
 				
        </ul>
      </div>

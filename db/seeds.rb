@@ -13,7 +13,7 @@ Book.create!([{
 	description: "Summers span decades. Winter can last a lifetime. And the struggle for the Iron Throne has begun. As Warden of the north, Lord Eddard Stark counts it a curse when King Robert bestows on him the office of the Hand. His honour weighs him down at court where a true man does what he will, not what he must … and a dead enemy is a thing of beauty. The old gods have no power in the south, Stark’s family is split and there is treachery at court. Worse, the vengeance-mad heir of the deposed Dragon King has grown to maturity in exile in the Free Cities. He claims the Iron Throne.",
 	amazon_id: "B004GJXQ20",
 	rating: 5,
-	finished_on: 1.years.ago
+	finished_on: 200.days.ago
 },
 {
 	title: "Linux All-in-One For Dummies",

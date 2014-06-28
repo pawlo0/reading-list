@@ -1,5 +1,7 @@
 class Book < ActiveRecord::Base
  
+ belongs_to :genre
+ 
  before_save :set_keywords
 
  scope :finished, -> { where.not(finished_on: nil) }

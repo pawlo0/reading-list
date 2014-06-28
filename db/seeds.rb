@@ -3,6 +3,7 @@ Book.destroy_all
 Genre.destroy_all
 fiction = Genre.create!(name: 'Fiction')
 non_fiction = Genre.create!(name: 'Non-Fiction')
+technical = Genre.create!(name: 'Technical')
 
 Book.create!([{
 	title: "The Three Musketeers",
@@ -11,7 +12,7 @@ Book.create!([{
 	amazon_id: "B004TP8ZZE",
 	rating: 4,
 	finished_on: 5.years.ago,
-	genre: fiction
+	genres: [fiction]
 },
 {
 	title: "A Game of Thrones",
@@ -20,7 +21,7 @@ Book.create!([{
 	amazon_id: "B004GJXQ20",
 	rating: 5,
 	finished_on: 100.days.ago,
-	genre: fiction
+	genres: [fiction]
 },
 {
 	title: "Linux All-in-One For Dummies",
@@ -29,7 +30,7 @@ Book.create!([{
 	amazon_id: "1118844351",
 	rating: 3,
 	finished_on: nil,
-	genre: non_fiction
+	genres: [non_fiction, technical]
 },
 {
 	title: "Trainspotting",
@@ -38,7 +39,7 @@ Book.create!([{
 	amazon_id: "B0031RS588",
 	rating: 4,
 	finished_on: 10.years.ago,
-	genre: fiction
+	genres: [fiction]
 }])
 
 p "Created #{Book.count} books."

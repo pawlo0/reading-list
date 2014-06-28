@@ -17,7 +17,7 @@
        </div>
        <span>
         <div class="col-sm-5">
-           <p class="text-muted"> Genres: 
+           <p class"text-muted"> Genres: 
            <% book.genres.each do |genre| %>
              <%= link_to genre.name, books_path(filter: genre.name), class: 'label label-primary' %> 
            <% end %>

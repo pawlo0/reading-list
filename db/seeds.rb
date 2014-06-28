@@ -27,7 +27,7 @@ Book.create!([{
 	title: "Trainspotting",
 	author: "Irvine Welsh",
 	description: "Choose life. Choose mortgage payments; choose washing machines; choose cars; choose sitting oan a couch watching mind-numbing and spirit-crushing game shows, stuffing fuckin junk food intae yir mooth. Choose rotting away, pishing and shiteing yersel in a home, a total fuckin embarrassment tae the selfish, fucked-up brats ye've produced. Choose life.",
-	amazon_id: "1118844351",
+	amazon_id: "B0031RS588",
 	rating: 4,
 	finished_on: 10.years.ago
 }])
